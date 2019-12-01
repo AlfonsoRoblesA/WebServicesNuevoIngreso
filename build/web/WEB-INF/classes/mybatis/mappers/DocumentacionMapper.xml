@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EB"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Documentacion">
+    <insert id="guardarDocumentos" parameterType="pojos.Documentacion">
+        INSERT INTO NuevoIngreso.dbo.Documentacion (identificacion,actaNacimiento,certificadoEstudios,comprobanteDomicilio,fotografia,idAlumno)
+        VALUES (#{identificacion},#{actaNacimiento},#{certificadoEstudios},#{comprobanteDomicilio},#{fotografia},#{idAlumno});
+    </insert>
+</mapper>
