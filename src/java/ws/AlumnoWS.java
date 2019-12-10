@@ -51,6 +51,9 @@ public class AlumnoWS {
         usu.setMatricula(matricula);
         usu.setCurp(curp);
         System.out.println("hola jaja");
+        System.out.println("matricula: "+matricula);
+        System.out.println("curp: "+curp);
+        
         try {
             conn = MyBatisUtil.getSession();
             list = conn.selectList("Alumno.login", usu);
